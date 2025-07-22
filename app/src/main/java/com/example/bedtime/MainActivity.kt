@@ -120,7 +120,7 @@ fun Alarm(context: Context) {
     val now = System.currentTimeMillis()
     val calendar = Calendar.getInstance().apply {
         timeInMillis = now
-        set(Calendar.SECOND, 13)
+        set(Calendar.SECOND, 0)
         set(Calendar.MILLISECOND, 0)
         if (timeInMillis <= now) {
             add(Calendar.MINUTE, 1)
